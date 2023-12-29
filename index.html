@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary py-4 mb-5">
+        <div class="container">
+            <div class="d-flex ">
+                <div class="align-self-center px-3">
+                    <i class="fa-solid fa-cloud fs-1"></i>
+                </div>
+                <div>
+                    <div class="navbar-brand" href="#">Weather</div>
+                    <div>tagline goes here</div>
+                </div>
+            </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-outline-info rounded-pill px-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-outline-info rounded-pill px-3" href="#">News</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-outline-info rounded-pill px-3" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-outline-info rounded-pill px-3" href="#">Photos</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-outline-info rounded-pill px-3" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container mb-5">
+        <div class="searchInput my-5">
+            <input type="text" placeholder="Find your location..." class="form-control rounded-pill pt-2 pb-2"></input>
+            <button type="button" class="btn btn-info rounded-pill px-4 me-1">Find</button>
+        </div>
+        <div class="row g-0">
+            <div class="col-4">
+                <div class="weatherItem bg-body-secondary" id="item1">
+                    <div class="container">
+                        <div class="itemHeader d-flex justify-content-between">
+                            <div>day</div>
+                            <div>date</div>
+                        </div>
+                        <div class="itemBody">
+                            <h3 class="my-3">location</h3>
+                            <h2 class="my-3">degree <span>icon</span></h2>
+                            <div class="my-2">state</div>
+                            <div class="my-2">
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="weatherItem bg-secondary" id="item2">
+                    <div class="container">
+                        <div class="itemHeader d-flex justify-content-between">
+                            <div>day</div>
+                            <div>date</div>
+                        </div>
+                        <div class="itemBody">
+                            <h3 class="my-3">location</h3>
+                            <h2 class="my-3">degree <span>icon</span></h2>
+                            <div class="my-2">state</div>
+                            <div class="my-2">
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="weatherItem bg-body-secondary" id="item3">
+                    <div class="container">
+                        <div class="itemHeader d-flex justify-content-between">
+                            <div>day</div>
+                            <div>date</div>
+                        </div>
+                        <div class="itemBody">
+                            <h3 class="my-3">location</h3>
+                            <h2 class="my-3">degree <span>icon</span></h2>
+                            <div class="my-2">state</div>
+                            <div class="my-2">
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                                <span><i></i>data</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-body-secondary">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-8">
+                    <div class="footerInput">
+                        <input type="text" placeholder="Enter your email address" class="rounded-pill pt-2 pb-2 form-control">
+                        <button class="btn btn-info rounded-pill px-4 me-1">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-4 text-center fs-4">
+                    <a href=""><i class="fa-brands fa-facebook-f px-2 text-black-50"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter px-2 text-black-50"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram px-2 text-black-50"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin px-2 text-black-50"></i></a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

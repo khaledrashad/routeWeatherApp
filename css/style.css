@@ -1,0 +1,10 @@
+.searchInput button, .footerInput button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.searchInput, .footerInput {
+    position: relative;
+}
