@@ -8,3 +8,7 @@
 .searchInput, .footerInput {
     position: relative;
 }
+
+.weatherItem {
+    padding: 20px 0;
+}

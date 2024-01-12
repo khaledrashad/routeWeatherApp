@@ -47,25 +47,37 @@
       </nav>
     <div class="container mb-5">
         <div class="searchInput my-5">
-            <input type="text" placeholder="Find your location..." class="form-control rounded-pill pt-2 pb-2"></input>
-            <button type="button" class="btn btn-info rounded-pill px-4 me-1">Find</button>
+            <input type="text" placeholder="Find your location..." class="form-control rounded-pill pt-2 pb-2" id="searchInp"></input>
+            <button type="button" class="btn btn-info rounded-pill px-4 me-1" id="searchBtn">Find</button>
         </div>
-        <div class="row g-0">
+        <div class="row g-0 ">
             <div class="col-4">
                 <div class="weatherItem bg-body-secondary" id="item1">
                     <div class="container">
                         <div class="itemHeader d-flex justify-content-between">
-                            <div>day</div>
-                            <div>date</div>
+                            <div id="item1Day">day</div>
+                            <div id="item1Date">date</div>
                         </div>
                         <div class="itemBody">
-                            <h3 class="my-3">location</h3>
-                            <h2 class="my-3">degree <span>icon</span></h2>
-                            <div class="my-2">state</div>
-                            <div class="my-2">
-                                <span><i></i>data</span>
-                                <span><i></i>data</span>
-                                <span><i></i>data</span>
+                            <h3 class="my-3" id="currentLocation">location</h3>
+                            <div class="d-flex justify-content-between"> 
+                                <span><h2 class="my-3" id="currentDegree">degree</h2></span>
+                                <span><img src="" id="currentIcon"></span>
+                            </div>
+                            <div class="my-2" id="currentState">state</div>
+                            <div class="my-4 d-flex">
+                                <div class="mx-1">
+                                    <i class="fa-solid fa-umbrella"></i>
+                                    <span id="currentRain">data</span>
+                                </div>
+                                <div class="mx-1">
+                                    <i class="fa-solid fa-wind"></i>
+                                    <span id="currentWind">data</span>
+                                </div>
+                                <div class="mx-1">
+                                    <i class="fa-regular fa-compass"></i>
+                                    <span id="currentDirection">data</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -75,13 +87,13 @@
                 <div class="weatherItem bg-secondary" id="item2">
                     <div class="container">
                         <div class="itemHeader d-flex justify-content-center mb-4">
-                            <div>day</div>
+                            <div id="day2Date">day</div>
                         </div>
-                        <div class="itemBody d-flex flex-column align-items-center">
-                            <div>icon</div>
-                            <h3>degree</h3>
-                            <h5>degree</h5>
-                            <h4 class="pb-3">staus</h4>
+                        <div class="itemBody d-flex flex-column align-items-center py-2">
+                            <img src="" id="day2Icon">
+                            <h3 id="day2Deg" class="py-1">degree</h3>
+                            <h5 id="day2Feel">degree</h5>
+                            <h4 class="pb-3" id="day2Status">status</h4>
                         </div>
                     </div>
                 </div>
@@ -90,13 +102,13 @@
                 <div class="weatherItem bg-body-secondary" id="item3">
                     <div class="container">
                         <div class="itemHeader d-flex justify-content-center mb-4">
-                            <div>day</div>
+                            <div id="day3Date">day</div>
                         </div>
-                        <div class="itemBody d-flex flex-column align-items-center">
-                            <div>icon</div>
-                            <h3>degree</h3>
-                            <h5>degree</h5>
-                            <h4 class="pb-3">staus</h4>
+                        <div class="itemBody d-flex flex-column align-items-center py-2">
+                            <img src="" id="day3Icon">
+                            <h3 id="day3Deg" class="py-1">degree</h3>
+                            <h5 id="day3Feel">degree</h5>
+                            <h4 class="pb-3" id="day3Status">status</h4>
                         </div>
                     </div>
                 </div>
@@ -121,7 +133,6 @@
             </div>
         </div>
     </footer>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
